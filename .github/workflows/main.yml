@@ -42,4 +42,4 @@ jobs:
       - name: Build for 2.13
         run: |
           cd couchbase-jvm-clients
-          ./mvnw -Dscala.compat.version=2.13 -Dscala.compat.library.version=2.13.4 clean install
+          ./mvnw -Dscala.compat.version=2.13 -Dscala.compat.library.version=2.13.4 -DskipTests clean install
