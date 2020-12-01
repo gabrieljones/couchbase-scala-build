@@ -28,6 +28,11 @@ jobs:
       # Runs a single command using the runners shell
       - name: Clone
         run: git clone https://github.com/couchbase/couchbase-jvm-clients.git
+      
+      - name: Checkout Release
+        run: |
+          cd couchbase-jvm-clients
+          git checkout colossus-sr-11
         
       - name: Make
         run: |
